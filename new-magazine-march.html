@@ -226,18 +226,18 @@
                 <div class="showcate" id="s1">
                     <a id="a1" style="font-size: 14pt"><b>NEW MAGAZINE</b><span class="badge">12</span></a>
                     <div id="show1" class="cateclass">
+                        <a href="new-magazine-january.html "><img src="images/cau1.png" width="250px" height="170px"></a><br>
                         <a href="new-magazine-january.html">New magazine in January</a><br>
+                        <a href="new-magazine-february.html"><img src="images/cau2.png"  width="250px" height="170px" ></a><br>
                         <a href="new-magazine-february.html">New magazine in February</a><br>
+                        <a href="new-magazine-march.html"><img src="images/cau3.png"  width="250px" height="170px"></a><br>
                         <a href="new-magazine-march.html">New magazine in March</a><br>
+                        <a href="new-magazine-april.html"><img src="images/cau4.png"  width="250px" height="170px"></a><br>
                         <a href="new-magazine-april.html">New magazine in April</a><br>
+                        <a href="new-magazine-may.html"><img src="images/cau5.png" width="250px" height="170px"></a><br>
                         <a href="new-magazine-may.html">New magazine in May</a><br>
+                        <a href="new-magazine-june.html"><img src="images/cau6.png" width="250px" height="170px"></a><br>
                         <a href="new-magazine-june.html">New magazine in June</a><br>
-                        <a href="new-magazine-july.html">New magazine in July</a><br>
-                        <a href="new-magazine-august.html">New magazine in August</a><br>
-                        <a href="new-amagazine-september.html">New magazine in September</a><br>
-                        <a href="new-magazine-october.html">New magazine in October</a><br>
-                        <a href="new-magazine-november.html">New magazine in November</a><br>
-                        <a href="new-magazine-december.html">New magazine in December</a><br>
 
                     </div>
                 </div>
@@ -394,6 +394,78 @@
         </div>
     </div>
 </footer>
+<script type="text/javascript">
 
+    //        var counter=0;
+    //        var email=document.getElementById("email").value();
+    function validateEmail(email) {
+        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+    }
+    function validate() {
+        var email = $("#em").val();
+        if (validateEmail(email)) {
+            return true;
+        } else {
+            alert("Emal invalid!!!")
+            return false;
+        }
+    }
+    $("#validate").bind("click", validate);
+    $(document).ready(function () {
+//            $(".add").click(function(){
+//                counter++;
+//
+//                $("#counter").text(counter);
+//            });
+
+        $('#carousel-example-generic').carousel({
+            interval: 1000
+        });
+        $(".add").click(function () {
+            $('#counter').html(function (i, val) {
+                return +val + 1
+            });
+        });
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > $('#nav2').height()) {
+                $('#nav2').addClass('navbar-fixed-top');
+            } else {
+                $('#nav2').removeClass('navbar-fixed-top');
+            }
+        });
+        $("#btnsearch").click(function () {
+            $("#search-terms").animate({width:'toggle'},300);
+        });
+        $("#cate").click(function () {
+            $("#s1").toggle("2000");
+        });
+        $("#price").click(function () {
+            $("#s2").toggle("2000");
+        });
+        $("#brand").click(function () {
+            $("#s3").toggle("2000");
+        });
+        $("#a1").click(function () {
+            $("#show1").toggle("2000");
+        });
+        $("#a2").click(function () {
+            $("#show2").toggle("2000");
+        });
+        $("#a3").click(function () {
+            $("#show3").toggle("2000");
+        });
+        $("#a4").click(function () {
+            $("#show4").toggle("2000");
+        });
+        $("#a5").click(function () {
+            $("#show5").toggle("2000");
+        });
+        $("#a6").click(function () {
+            $("#show6").toggle("2000");
+        });
+    });
+
+</script>
 </body>
 </html>

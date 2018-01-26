@@ -117,22 +117,45 @@ input::-webkit-input-placeholder {
     color: #999;
 }
 .navbar-right {
-    /*!*float: left!important;*!*/
-    /*margin-left: 62px;*/
-    /*margin-top: 12px;*/
+    float: left!important;
+    margin-left: 62px;
+    margin-top: 12px;
 }
-/*.f-nav{  !* To fix main menu container *!*/
-    /*z-index: 9999;*/
-    /*position: fixed;*/
-    /*left: 0;*/
-    /*top: 0;*/
-    /*!*width: 100%;*!*/
-/*}*/
-/*.col-lg-12{*/
-    /*width: 100%;*/
-    /*padding-right: 0;*/
-    /*padding-left: 0;*/
-/*}*/
+.f-nav{  /* To fix main menu container */
+    z-index: 9998;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.foot{
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+.nav-tabs > li > a {
+    color: black;
+}
+.button {
+    padding: 10px 20px;
+    border: 1px solid #eaeaea;
+    background: black;
+    color: white;
+}
+.button:hover {
+    background: black;
+    color: #f5d714;
+}
+#nav1{
+    padding: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+.hder{
+    padding-left: 0;
+    padding-right: 0;
+}
 #footer {
     background-color: white;
     height: auto;
@@ -214,7 +237,7 @@ input::-webkit-input-placeholder {
     -o-transition: all 0.5s ease 0s;
 }
 .input-footer{
-    width: 70%;
+    width: 68%;
     border: 1px solid #f5d714;
 }
 #footer{
@@ -565,4 +588,191 @@ p{
 }
 .social-icon-color:hover {
     opacity: 1;
+}
+input[type=search] {
+    background: white url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+    border: solid 1px #ccc;
+    padding: 9px 10px 9px 32px;
+    width: 100%;
+
+    -webkit-border-radius: 10em;
+    -moz-border-radius: 10em;
+    border-radius: 10em;
+
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+/*login*/
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+#login-modal .modal-dialog {
+    width: 350px;
+}
+.modal{
+    z-index: 9999;
+}
+
+#login-modal input[type=text], input[type=password] {
+    margin-top: 10px;
+}
+.btn-cart{
+    margin-left: 70px;
+    margin-top: 7px;
+}
+.glyphicon-user{
+    color: white;
+}
+.glyphicon-user:hover{
+    color: #f5d714;
+}
+.sign-with {
+    padding: 0 20px;
+}
+.social-header {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 6px;
+    font-weight: 700;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.social-column {
+    margin-top: 0;
+    display: table;
+    margin-top: 25px;
+    padding-left: 22px;
+}
+input[type=password]{
+    margin-top: 0;
+}
+.social-inner div {
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+/* #########################################
+   #    override the bootstrap configs     #
+   ######################################### */
+
+.modal-backdrop.in {
+    filter: alpha(opacity=50);
+    opacity: .8;
+}
+
+.modal-content {
+    background-color: white;
+    border: 1px solid #bdc3c7;
+    border-radius: 10px;
+    outline: 0;
+}
+.nav-tabs {
+    margin-bottom: 15px;
+}
+div#OR {
+    height: 30px;
+    width: 30px;
+    border: 1px solid #C2C2C2;
+    border-radius: 50%;
+    font-weight: bold;
+    line-height: 28px;
+    text-align: center;
+    font-size: 12px;
+    float: right;
+    position: absolute;
+    right: -16px;
+    top: 40%;
+    z-index: 1;
+    background: #DFDFDF;
+}
+.modal-header {
+    min-height: 16.43px;
+    padding: 15px 15px 15px 15px;
+    border-bottom: 0;
+    border-bottom: 1px solid #bdc3c7;
+}
+
+.modal-body {
+    position: relative;
+    padding: 15px;
+}
+
+.modal-footer {
+    padding: 15px 15px 15px 15px;
+    text-align: left;
+    border-top: 0;
+}
+
+.checkbox {
+    margin-bottom: 0;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    outline: none;
+}
+
+.btn-lg, .btn-group-lg>.btn {
+    border-radius: 0;
+}
+
+.btn-link {
+    padding: 5px 10px 0 0;
+    color: #95a5a6;
+}
+
+.btn-link:hover, .btn-link:focus {
+    color: #2c3e50;
+    text-decoration: none;
+}
+.modal-dialog {
+    display: inline-block;
+    /*text-align: left;*/
+    vertical-align: middle;
+    max-width: 700px;
+    width: 90%;
+}
+.modal {
+    text-align: center;
+    padding: 0!important;
+}
+.glyphicon {
+    top: 0;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+
+/*back to top*/
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgba(0,0,0,0.04); /* Set a background color */
+    /*color: black; !* Text color *!*/
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+    color: white;
 }
